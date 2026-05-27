@@ -16,11 +16,10 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({
     origin: [
         'http://localhost:5173',
-        'https://liminal-mgid.vercel.app/',
+        'https://liminal-sooty.vercel.app',
     ],
     credentials: true,
 }))
-app.use(express.json());
 
 // Rutas
 app.use('/api/auth', authRoutes);
